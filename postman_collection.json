@@ -1,0 +1,1048 @@
+{
+	"info": {
+		"_postman_id": "8cdac7dc-0e76-4744-b4b5-1e139e91dd2b",
+		"name": "Ecommerce NestJS",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "12139199"
+	},
+	"item": [
+		{
+			"name": "API Gateway",
+			"item": [
+				{
+					"name": "Auth Proxy",
+					"item": [
+						{
+							"name": "Register",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"email\": \"test31@gmail.com\",\n    \"password\": \"testtesttest\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:3000/auth/register",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"auth",
+										"register"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Register",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"email\": \"test30@gmail.com\",\n    \"password\": \"testtesttest\"\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "localhost:3000/auth/register",
+											"host": [
+												"localhost"
+											],
+											"port": "3000",
+											"path": [
+												"auth",
+												"register"
+											]
+										}
+									},
+									"status": "Created",
+									"code": 201,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "47"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"2f-lzKjOXu1C6xYOGLJKreULHo/E90\""
+										},
+										{
+											"key": "Date",
+											"value": "Thu, 22 Jun 2023 10:48:39 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"status\": 409,\n    \"error\": [\n        \"Email already exists\"\n    ]\n}"
+								},
+								{
+									"name": "Register",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"email\": \"test31@gmail.com\",\n    \"password\": \"testtesttest\"\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "localhost:3000/auth/register",
+											"host": [
+												"localhost"
+											],
+											"port": "3000",
+											"path": [
+												"auth",
+												"register"
+											]
+										}
+									},
+									"status": "Created",
+									"code": 201,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "14"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"e-pblXCnqvjkmrEOGAhcfx8QPBXOA\""
+										},
+										{
+											"key": "Date",
+											"value": "Thu, 22 Jun 2023 10:48:55 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"status\": 201\n}"
+								}
+							]
+						},
+						{
+							"name": "Login",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"email\": \"test31@gmail.com\",\n    \"password\": \"testtesttest\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:3000/auth/login",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"auth",
+										"login"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Login",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"email\": \"test30@gmail.com\",\n    \"password\": \"testtesttest\"\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "localhost:3000/auth/login",
+											"host": [
+												"localhost"
+											],
+											"port": "3000",
+											"path": [
+												"auth",
+												"login"
+											]
+										}
+									},
+									"status": "Created",
+									"code": 201,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "200"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"c8-rAgsem1UM2rY4ImPa1ygpCiPAgo\""
+										},
+										{
+											"key": "Date",
+											"value": "Thu, 22 Jun 2023 10:48:32 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"status\": 200,\n    \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NTUsImVtYWlsIjoidGVzdDMwQGdtYWlsLmNvbSIsImlhdCI6MTY4NzQzMDkxMiwiZXhwIjoxNjg3NTE3MzEyfQ.g2HKTkN1rwfaCKd0cKjFiLczMBYVnjBXOJ0uW9TZChE\"\n}"
+								},
+								{
+									"name": "Login",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"email\": \"test30@gmail.com\",\n    \"password\": \"testtesttest\"\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "localhost:3000/auth/login",
+											"host": [
+												"localhost"
+											],
+											"port": "3000",
+											"path": [
+												"auth",
+												"login"
+											]
+										}
+									},
+									"status": "Created",
+									"code": 201,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "36"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"24-0eFkl1/+KyYfouVH1ZrrCjs4/14\""
+										},
+										{
+											"key": "Date",
+											"value": "Thu, 22 Jun 2023 10:48:46 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"status\": 404,\n    \"error\": [\n        \"Forbidden\"\n    ]\n}"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "API Proxy",
+					"item": [
+						{
+							"name": "Product Connector",
+							"item": [
+								{
+									"name": "Get All Products",
+									"request": {
+										"method": "GET",
+										"header": []
+									},
+									"response": [
+										{
+											"name": "Get All Products",
+											"originalRequest": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "localhost:3000/product/all",
+													"host": [
+														"localhost"
+													],
+													"port": "3000",
+													"path": [
+														"product",
+														"all"
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "X-Powered-By",
+													"value": "Express"
+												},
+												{
+													"key": "Content-Type",
+													"value": "application/json; charset=utf-8"
+												},
+												{
+													"key": "Content-Length",
+													"value": "626"
+												},
+												{
+													"key": "ETag",
+													"value": "W/\"272-Yo/EXbPbwm2r6oCwU4grAxtjcsE\""
+												},
+												{
+													"key": "Date",
+													"value": "Thu, 22 Jun 2023 16:45:30 GMT"
+												},
+												{
+													"key": "Connection",
+													"value": "keep-alive"
+												},
+												{
+													"key": "Keep-Alive",
+													"value": "timeout=5"
+												}
+											],
+											"cookie": [],
+											"body": "{\n    \"data\": [\n        {\n            \"id\": 7,\n            \"name\": \"aliquip ut culpa\",\n            \"sku\": \"veniam deserunt Excepteur\",\n            \"stock\": 222222,\n            \"price\": 11111\n        },\n        {\n            \"id\": 12,\n            \"name\": \"ex Lorem sit dolore ea\",\n            \"sku\": \"non exercitation ex\",\n            \"stock\": 222222,\n            \"price\": 11111\n        },\n        {\n            \"id\": 24,\n            \"name\": \"ex Lorem sit dolore ea\",\n            \"sku\": \"non exercitationzc ex\",\n            \"stock\": 222222,\n            \"price\": 11111\n        },\n        {\n            \"id\": 25,\n            \"name\": \"ex Lorem sit dolore ea\",\n            \"sku\": \"non exercitationzccc ex\",\n            \"stock\": 222222,\n            \"price\": 11111\n        },\n        {\n            \"id\": 22,\n            \"name\": \"ex Lorem sit dolore ea\",\n            \"sku\": \"non exercitationz ex\",\n            \"stock\": 222222,\n            \"price\": 11111\n        },\n        {\n            \"id\": 1,\n            \"name\": \"sint ipsum aliqua veniam\",\n            \"sku\": \"aliqua consectetur ut esse laborum\",\n            \"stock\": 221182,\n            \"price\": 11111\n        }\n    ]\n}"
+										}
+									]
+								},
+								{
+									"name": "Get Product by ID",
+									"request": {
+										"method": "GET",
+										"header": []
+									},
+									"response": [
+										{
+											"name": "New Request",
+											"originalRequest": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "localhost:3000/product/:id",
+													"host": [
+														"localhost"
+													],
+													"port": "3000",
+													"path": [
+														"product",
+														":id"
+													],
+													"variable": [
+														{
+															"key": "id",
+															"value": "7"
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "X-Powered-By",
+													"value": "Express"
+												},
+												{
+													"key": "Content-Type",
+													"value": "application/json; charset=utf-8"
+												},
+												{
+													"key": "Content-Length",
+													"value": "119"
+												},
+												{
+													"key": "ETag",
+													"value": "W/\"77-A5vlMQQCqEmPgasSiDlVpPr35GI\""
+												},
+												{
+													"key": "Date",
+													"value": "Thu, 22 Jun 2023 16:46:06 GMT"
+												},
+												{
+													"key": "Connection",
+													"value": "keep-alive"
+												},
+												{
+													"key": "Keep-Alive",
+													"value": "timeout=5"
+												}
+											],
+											"cookie": [],
+											"body": "{\n    \"status\": 200,\n    \"data\": {\n        \"id\": 7,\n        \"name\": \"aliquip ut culpa\",\n        \"sku\": \"veniam deserunt Excepteur\",\n        \"stock\": 222222,\n        \"price\": 11111\n    }\n}"
+										}
+									]
+								}
+							],
+							"auth": {
+								"type": "bearer",
+								"bearer": [
+									{
+										"key": "token",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NTYsImVtYWlsIjoidGVzdDMxQGdtYWlsLmNvbSIsImlhdCI6MTY4NzQ1MjE2NiwiZXhwIjoxNjg3NTM4NTY2fQ.Cm2VHCFUsqu5F0aG-YU0KMZ2yP5G6CY-TQz_KlQi1N0",
+										"type": "string"
+									}
+								]
+							},
+							"event": [
+								{
+									"listen": "prerequest",
+									"script": {
+										"type": "text/javascript",
+										"exec": [
+											""
+										]
+									}
+								},
+								{
+									"listen": "test",
+									"script": {
+										"type": "text/javascript",
+										"exec": [
+											""
+										]
+									}
+								}
+							]
+						},
+						{
+							"name": "User Connector",
+							"item": [
+								{
+									"name": "Get User Data",
+									"request": {
+										"method": "GET",
+										"header": []
+									},
+									"response": [
+										{
+											"name": "404",
+											"originalRequest": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "localhost:3000/user/",
+													"host": [
+														"localhost"
+													],
+													"port": "3000",
+													"path": [
+														"user",
+														""
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "X-Powered-By",
+													"value": "Express"
+												},
+												{
+													"key": "Content-Type",
+													"value": "application/json; charset=utf-8"
+												},
+												{
+													"key": "Content-Length",
+													"value": "41"
+												},
+												{
+													"key": "ETag",
+													"value": "W/\"29-eOVIxJbmeG15aXRn1bhv1JYdDJg\""
+												},
+												{
+													"key": "Date",
+													"value": "Thu, 22 Jun 2023 16:48:05 GMT"
+												},
+												{
+													"key": "Connection",
+													"value": "keep-alive"
+												},
+												{
+													"key": "Keep-Alive",
+													"value": "timeout=5"
+												}
+											],
+											"cookie": [],
+											"body": "{\n    \"status\": 404,\n    \"error\": [\n        \"User not found\"\n    ]\n}"
+										},
+										{
+											"name": "Get User Data",
+											"originalRequest": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "localhost:3000/user/",
+													"host": [
+														"localhost"
+													],
+													"port": "3000",
+													"path": [
+														"user",
+														""
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "X-Powered-By",
+													"value": "Express"
+												},
+												{
+													"key": "Content-Type",
+													"value": "application/json; charset=utf-8"
+												},
+												{
+													"key": "Content-Length",
+													"value": "119"
+												},
+												{
+													"key": "ETag",
+													"value": "W/\"77-kql75x9P5vuKDqkcm8RAfQVZugE\""
+												},
+												{
+													"key": "Date",
+													"value": "Thu, 22 Jun 2023 16:52:28 GMT"
+												},
+												{
+													"key": "Connection",
+													"value": "keep-alive"
+												},
+												{
+													"key": "Keep-Alive",
+													"value": "timeout=5"
+												}
+											],
+											"cookie": [],
+											"body": "{\n    \"status\": 200,\n    \"data\": {\n        \"email\": \"test31@gmail.com\",\n        \"profileImage\": \"reallygoodwebsite.io/shiba.png\",\n        \"address\": \"Thailand\"\n    }\n}"
+										}
+									]
+								},
+								{
+									"name": "Update User",
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"profileImage\": \"reallygoodwebsite.io/shiba.png\",\n    \"address\": \"Thailand\"\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "localhost:3000/user/update",
+											"host": [
+												"localhost"
+											],
+											"port": "3000",
+											"path": [
+												"user",
+												"update"
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "Update User",
+											"originalRequest": {
+												"method": "POST",
+												"header": [],
+												"body": {
+													"mode": "raw",
+													"raw": "{\n    \"profileImage\": \"reallygoodwebsite.io/shiba.png\",\n    \"address\": \"Thailand\"\n}",
+													"options": {
+														"raw": {
+															"language": "json"
+														}
+													}
+												},
+												"url": {
+													"raw": "localhost:3000/user/update",
+													"host": [
+														"localhost"
+													],
+													"port": "3000",
+													"path": [
+														"user",
+														"update"
+													]
+												}
+											},
+											"status": "Created",
+											"code": 201,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "X-Powered-By",
+													"value": "Express"
+												},
+												{
+													"key": "Content-Type",
+													"value": "application/json; charset=utf-8"
+												},
+												{
+													"key": "Content-Length",
+													"value": "14"
+												},
+												{
+													"key": "ETag",
+													"value": "W/\"e-QlsUp1vTYvBgYHrHCBYe2n/q268\""
+												},
+												{
+													"key": "Date",
+													"value": "Thu, 22 Jun 2023 16:52:26 GMT"
+												},
+												{
+													"key": "Connection",
+													"value": "keep-alive"
+												},
+												{
+													"key": "Keep-Alive",
+													"value": "timeout=5"
+												}
+											],
+											"cookie": [],
+											"body": "{\n    \"status\": 200\n}"
+										}
+									]
+								}
+							]
+						},
+						{
+							"name": "Order Connector",
+							"item": [
+								{
+									"name": "Create Order",
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"productId\": 1,\n    \"quantity\": 10\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "localhost:3000/order",
+											"host": [
+												"localhost"
+											],
+											"port": "3000",
+											"path": [
+												"order"
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "Create Order",
+											"originalRequest": {
+												"method": "POST",
+												"header": [],
+												"body": {
+													"mode": "raw",
+													"raw": "{\n    \"productId\": 1,\n    \"quantity\": 10\n}",
+													"options": {
+														"raw": {
+															"language": "json"
+														}
+													}
+												},
+												"url": {
+													"raw": "localhost:3000/order",
+													"host": [
+														"localhost"
+													],
+													"port": "3000",
+													"path": [
+														"order"
+													]
+												}
+											},
+											"status": "Created",
+											"code": 201,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "X-Powered-By",
+													"value": "Express"
+												},
+												{
+													"key": "Content-Type",
+													"value": "application/json; charset=utf-8"
+												},
+												{
+													"key": "Content-Length",
+													"value": "21"
+												},
+												{
+													"key": "ETag",
+													"value": "W/\"15-u2qtfOPKtP/8SY71baNcGV+5aB0\""
+												},
+												{
+													"key": "Date",
+													"value": "Thu, 22 Jun 2023 17:02:05 GMT"
+												},
+												{
+													"key": "Connection",
+													"value": "keep-alive"
+												},
+												{
+													"key": "Keep-Alive",
+													"value": "timeout=5"
+												}
+											],
+											"cookie": [],
+											"body": "{\n    \"status\": 200,\n    \"id\": 7\n}"
+										}
+									]
+								},
+								{
+									"name": "Get Order Details",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "localhost:3000/order/details?id",
+											"host": [
+												"localhost"
+											],
+											"port": "3000",
+											"path": [
+												"order",
+												"details"
+											],
+											"query": [
+												{
+													"key": "id",
+													"value": null
+												}
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "Get Order Details",
+											"originalRequest": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "localhost:3000/order/details?id=5",
+													"host": [
+														"localhost"
+													],
+													"port": "3000",
+													"path": [
+														"order",
+														"details"
+													],
+													"query": [
+														{
+															"key": "id",
+															"value": "5"
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "X-Powered-By",
+													"value": "Express"
+												},
+												{
+													"key": "Content-Type",
+													"value": "application/json; charset=utf-8"
+												},
+												{
+													"key": "Content-Length",
+													"value": "197"
+												},
+												{
+													"key": "ETag",
+													"value": "W/\"c5-70HQkYiGAo15/5kV8LIhWpEMb6A\""
+												},
+												{
+													"key": "Date",
+													"value": "Thu, 22 Jun 2023 17:04:45 GMT"
+												},
+												{
+													"key": "Connection",
+													"value": "keep-alive"
+												},
+												{
+													"key": "Keep-Alive",
+													"value": "timeout=5"
+												}
+											],
+											"cookie": [],
+											"body": "{\n    \"status\": 200,\n    \"error\": null,\n    \"order\": {\n        \"id\": 5,\n        \"price\": 11111,\n        \"quantity\": 10,\n        \"product\": {\n            \"id\": 1,\n            \"name\": \"sint ipsum aliqua veniam\",\n            \"sku\": \"aliqua consectetur ut esse laborum\",\n            \"stock\": 221132,\n            \"price\": 11111\n        }\n    }\n}"
+										},
+										{
+											"name": "Get Order Details",
+											"originalRequest": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "localhost:3000/order/details?id=1",
+													"host": [
+														"localhost"
+													],
+													"port": "3000",
+													"path": [
+														"order",
+														"details"
+													],
+													"query": [
+														{
+															"key": "id",
+															"value": "1"
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "X-Powered-By",
+													"value": "Express"
+												},
+												{
+													"key": "Content-Type",
+													"value": "application/json; charset=utf-8"
+												},
+												{
+													"key": "Content-Length",
+													"value": "42"
+												},
+												{
+													"key": "ETag",
+													"value": "W/\"2a-z71ci6O2uDwf38YTZf0ACr0WmAs\""
+												},
+												{
+													"key": "Date",
+													"value": "Thu, 22 Jun 2023 16:57:18 GMT"
+												},
+												{
+													"key": "Connection",
+													"value": "keep-alive"
+												},
+												{
+													"key": "Keep-Alive",
+													"value": "timeout=5"
+												}
+											],
+											"cookie": [],
+											"body": "{\n    \"status\": 404,\n    \"error\": [\n        \"Order not found\"\n    ]\n}"
+										}
+									]
+								},
+								{
+									"name": "Order History",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "localhost:3000/order/history",
+											"host": [
+												"localhost"
+											],
+											"port": "3000",
+											"path": [
+												"order",
+												"history"
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "Order History",
+											"originalRequest": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "localhost:3000/order/history",
+													"host": [
+														"localhost"
+													],
+													"port": "3000",
+													"path": [
+														"order",
+														"history"
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "X-Powered-By",
+													"value": "Express"
+												},
+												{
+													"key": "Content-Type",
+													"value": "application/json; charset=utf-8"
+												},
+												{
+													"key": "Content-Length",
+													"value": "833"
+												},
+												{
+													"key": "ETag",
+													"value": "W/\"341-2UlhK1uwRmYQU1hyEDtO8wJhFPI\""
+												},
+												{
+													"key": "Date",
+													"value": "Thu, 22 Jun 2023 17:04:54 GMT"
+												},
+												{
+													"key": "Connection",
+													"value": "keep-alive"
+												},
+												{
+													"key": "Keep-Alive",
+													"value": "timeout=5"
+												}
+											],
+											"cookie": [],
+											"body": "{\n    \"status\": 200,\n    \"data\": [\n        {\n            \"id\": 3,\n            \"price\": 11111,\n            \"quantity\": 10,\n            \"product\": {\n                \"id\": 1,\n                \"name\": \"sint ipsum aliqua veniam\",\n                \"sku\": \"aliqua consectetur ut esse laborum\",\n                \"stock\": 221132,\n                \"price\": 11111\n            }\n        },\n        {\n            \"id\": 4,\n            \"price\": 11111,\n            \"quantity\": 10,\n            \"product\": {\n                \"id\": 1,\n                \"name\": \"sint ipsum aliqua veniam\",\n                \"sku\": \"aliqua consectetur ut esse laborum\",\n                \"stock\": 221132,\n                \"price\": 11111\n            }\n        },\n        {\n            \"id\": 5,\n            \"price\": 11111,\n            \"quantity\": 10,\n            \"product\": {\n                \"id\": 1,\n                \"name\": \"sint ipsum aliqua veniam\",\n                \"sku\": \"aliqua consectetur ut esse laborum\",\n                \"stock\": 221132,\n                \"price\": 11111\n            }\n        },\n        {\n            \"id\": 6,\n            \"price\": 11111,\n            \"quantity\": 10,\n            \"product\": {\n                \"id\": 1,\n                \"name\": \"sint ipsum aliqua veniam\",\n                \"sku\": \"aliqua consectetur ut esse laborum\",\n                \"stock\": 221132,\n                \"price\": 11111\n            }\n        },\n        {\n            \"id\": 7,\n            \"price\": 11111,\n            \"quantity\": 10,\n            \"product\": {\n                \"id\": 1,\n                \"name\": \"sint ipsum aliqua veniam\",\n                \"sku\": \"aliqua consectetur ut esse laborum\",\n                \"stock\": 221132,\n                \"price\": 11111\n            }\n        }\n    ]\n}"
+										}
+									]
+								}
+							]
+						}
+					],
+					"auth": {
+						"type": "bearer",
+						"bearer": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NTYsImVtYWlsIjoidGVzdDMxQGdtYWlsLmNvbSIsImlhdCI6MTY4NzQ1MjE2NiwiZXhwIjoxNjg3NTM4NTY2fQ.Cm2VHCFUsqu5F0aG-YU0KMZ2yP5G6CY-TQz_KlQi1N0",
+								"type": "string"
+							}
+						]
+					},
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"type": "text/javascript",
+								"exec": [
+									""
+								]
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"type": "text/javascript",
+								"exec": [
+									""
+								]
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}
