@@ -14,26 +14,26 @@
 - Download/Install nodejs from [Here](https://nodejs.org/en/download)
 
 ## Shell 1
-`cd api-gateway-service`
-`npm install`
-`yarn start:dev`
+```cd api-gateway-service```
+```npm install```
+```yarn start:dev```
 
 ## Shell 2
-`cd auth-service`
-`npm install`
-`yarn start:dev`
+```cd auth-service```
+```npm install```
+```yarn start:dev```
 
 ## Shell 3
-`cd order-management-service`
-`npm install`
-`yarn start:dev`
+```cd order-management-service```
+```npm install```
+```yarn start:dev```
 
 ## Shell 4
-`cd product-management-service`
-`npm install`
-`yarn start:dev`
+```cd product-management-service```
+```npm install```
+```yarn start:dev```
 
 ## Shell 5
-`cd user-management-service`
-`npm install`
-`yarn start:dev`
+```cd user-management-service```
+```npm install```
+```yarn start:dev```
