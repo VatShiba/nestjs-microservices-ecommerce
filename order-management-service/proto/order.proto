@@ -1,0 +1,71 @@
+syntax = "proto3";
+
+package order;
+
+import "product.proto";
+
+service OrderService {
+  rpc CreateOrder(CreateOrderRequest) returns (CreateOrderResponse) {}
+  rpc CancelOrder(CancelOrderRequest) returns (CancelOrderResponse) {}
+  rpc GetDetails(DetailsRequest) returns (DetailsResponse) {}
+  rpc GetHistory(HistoryRequest) returns (HistoryResponse) {}
+}
+
+// Create Order
+
+message CreateOrderRequest {
+  int32 productId = 1;
+  int32 quantity = 2;
+  int32 userId = 3;
+}
+
+message CreateOrderResponse {
+  int32 status = 1;
+  repeated string error = 2;
+  int32 id = 3;
+}
+
+// Cancel Order
+
+message CancelOrderRequest {
+  int32 id = 1;
+  int32 userId = 2;
+}
+
+message CancelOrderResponse {
+  int32 status = 1;
+  repeated string error = 2;
+  int32 id = 3;
+}
+
+// Order
+
+message Order {
+  int32 id = 1;
+  int32 price = 2;
+  int32 quantity = 3;
+  productData product = 4;
+}
+
+// Get Order Details
+
+message DetailsRequest {
+  int32 id = 1;
+  int32 userId = 2;
+}
+
+message DetailsResponse {
+  int32 status = 1;
+  repeated string error = 2;
+  Order order = 3;
+}
+
+// Order History
+
+message HistoryRequest { int32 userId = 1; }
+
+message HistoryResponse {
+  int32 status = 1;
+  repeated string error = 2;
+  repeated Order data = 3;
+}
