@@ -11,7 +11,7 @@ Lately I have heard about gRPC performance that really surprised me. The project
 
 ## Prepare DB
 
-- Serve Postgresql database using Docker or Local Service as these names
+- Serve Postgresql database at port 5432 using Docker or Local Service as these names
   - auth_service
   - order_service
   - product_service
@@ -19,40 +19,40 @@ Lately I have heard about gRPC performance that really surprised me. The project
 - You can also change database config in each project module
 
 ## Prepare Enviroments
-- Remove **'.example'** from **'.env'** file name in Auth Service
+- Remove **'.example'** from **'.env.example'** file name in Auth Service
 - Download/Install nodejs from [Here](https://nodejs.org/en/download)
 
 ## Shell 1
-> ```cd api-gateway-service```
+> cd api-gateway-service
 
-> ```npm install```
+> npm install
 
-> ```yarn start:dev```
+> yarn start:dev
 
 ## Shell 2
-> ```cd auth-service```
+> cd auth-service
 
-> ```npm install```
+> npm install
 
-> ```yarn start:dev```
+> yarn start:dev
 
 ## Shell 3
-> ```cd order-management-service```
+> cd order-management-service
 
-> ```npm install```
+> npm install
 
-> ```yarn start:dev```
+> yarn start:dev
 
 ## Shell 4
-> ```cd product-management-service```
+> cd product-management-service
 
-> ```npm install```
+> npm install
 
-> ```yarn start:dev```
+> yarn start:dev
 
 ## Shell 5
-> ```cd user-management-service```
+> cd user-management-service
 
-> ```npm install```
+> npm install
 
-> ```yarn start:dev```
+> yarn start:dev
